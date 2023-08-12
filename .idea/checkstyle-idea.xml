@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CheckStyle-IDEA" serialisationVersion="2">
+    <checkstyleVersion>8.18</checkstyleVersion>
+    <scanScope>JavaOnly</scanScope>
+    <suppressErrors>true</suppressErrors>
+    <option name="thirdPartyClasspath" />
+    <option name="activeLocationIds">
+      <option value="7b9fedb6-e39b-43ce-95e6-a0c13b873e6d" />
+    </option>
+    <option name="locations">
+      <list>
+        <ConfigurationLocation id="bundled-sun-checks" type="BUNDLED" scope="All" description="Sun Checks">(bundled)</ConfigurationLocation>
+        <ConfigurationLocation id="bundled-google-checks" type="BUNDLED" scope="All" description="Google Checks">(bundled)</ConfigurationLocation>
+        <ConfigurationLocation id="7b9fedb6-e39b-43ce-95e6-a0c13b873e6d" type="LOCAL_FILE" scope="All" description="CPSC 210 Checkstyle">$PROJECT_DIR$/../../CPSC 210/Lectures/D3-MessyZooStarter/config/CPSC210Checkstyle.xml</ConfigurationLocation>
+      </list>
+    </option>
+  </component>
+</project>
