@@ -1,5 +1,5 @@
 <component name="ArtifactManager">
-  <artifact type="jar" build-on-make="true" name="Keep Talking And No One Explodes Solver:jar">
+  <artifact type="jar" name="Keep Talking And No One Explodes Solver:jar">
     <output-path>$PROJECT_DIR$/out/artifacts/Keep_Talking_And_No_One_Explodes_Solver_jar</output-path>
     <root id="archive" name="Keep Talking And No One Explodes Solver.jar">
       <element id="module-output" name="Keep Talking And No One Explodes Solver" />
