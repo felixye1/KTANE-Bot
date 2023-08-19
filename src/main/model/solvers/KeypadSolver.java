@@ -8,36 +8,30 @@ import java.util.Set;
 // represents a keypad module solver
 public class KeypadSolver {
     private static final Set<String> IMAGE_FILES = Set.of(
-            "src/main/symbols/ae.png", "src/main/symbols/at.png", "src/main/symbols/blackstar.png",
-            "src/main/symbols/bt.png", "src/main/symbols/cdotleft.png", "src/main/symbols/cdotright.png",
-            "src/main/symbols/copyright.png", "src/main/symbols/eumlat.png", "src/main/symbols/hy.png",
-            "src/main/symbols/lambda.png", "src/main/symbols/lightning.png", "src/main/symbols/loop.png",
-            "src/main/symbols/mirror.png", "src/main/symbols/nhat.png", "src/main/symbols/omega.png",
-            "src/main/symbols/paragraph.png", "src/main/symbols/pumpkin.png", "src/main/symbols/puzzle.png",
-            "src/main/symbols/question.png", "src/main/symbols/six.png", "src/main/symbols/smiley.png",
-            "src/main/symbols/three.png", "src/main/symbols/trident.png", "src/main/symbols/tripod.png",
-            "src/main/symbols/whitestar.png", "src/main/symbols/worm.png", "src/main/symbols/xi.png"
+            "symbols/ae.png", "symbols/at.png", "symbols/blackstar.png",
+            "symbols/bt.png", "symbols/cdotleft.png", "symbols/cdotright.png",
+            "symbols/copyright.png", "symbols/eumlat.png", "symbols/hy.png",
+            "symbols/lambda.png", "symbols/lightning.png", "symbols/loop.png",
+            "symbols/mirror.png", "symbols/nhat.png", "symbols/omega.png",
+            "symbols/paragraph.png", "symbols/pumpkin.png", "symbols/puzzle.png",
+            "symbols/question.png", "symbols/six.png", "symbols/smiley.png",
+            "symbols/three.png", "symbols/trident.png", "symbols/tripod.png",
+            "symbols/whitestar.png", "symbols/worm.png", "symbols/xi.png"
     );
     private static final int NUM_KEYS = 4;
     private static final Set<ArrayList<String>> IMAGE_KEYS = Set.of(
-            new ArrayList<>(List.of("src/main/symbols/mirror.png", "src/main/symbols/at.png",
-                    "src/main/symbols/lambda.png", "src/main/symbols/lightning.png", "src/main/symbols/tripod.png",
-                    "src/main/symbols/hy.png", "src/main/symbols/cdotleft.png")),
-            new ArrayList<>(List.of("src/main/symbols/eumlat.png", "src/main/symbols/mirror.png",
-                    "src/main/symbols/cdotleft.png", "src/main/symbols/loop.png", "src/main/symbols/whitestar.png",
-                    "src/main/symbols/hy.png", "src/main/symbols/question.png")),
-            new ArrayList<>(List.of("src/main/symbols/copyright.png", "src/main/symbols/pumpkin.png",
-                    "src/main/symbols/loop.png", "src/main/symbols/xi.png", "src/main/symbols/three.png",
-                    "src/main/symbols/lambda.png", "src/main/symbols/whitestar.png")),
-            new ArrayList<>(List.of("src/main/symbols/six.png", "src/main/symbols/paragraph.png",
-                    "src/main/symbols/bt.png", "src/main/symbols/tripod.png", "src/main/symbols/xi.png",
-                    "src/main/symbols/question.png", "src/main/symbols/smiley.png")),
-            new ArrayList<>(List.of("src/main/symbols/trident.png", "src/main/symbols/smiley.png",
-                    "src/main/symbols/bt.png", "src/main/symbols/cdotright.png", "src/main/symbols/paragraph.png",
-                    "src/main/symbols/worm.png", "src/main/symbols/blackstar.png")),
-            new ArrayList<>(List.of("src/main/symbols/six.png", "src/main/symbols/eumlat.png",
-                    "src/main/symbols/puzzle.png", "src/main/symbols/ae.png", "src/main/symbols/trident.png",
-                    "src/main/symbols/nhat.png", "src/main/symbols/omega.png"))
+            new ArrayList<>(List.of("symbols/mirror.png", "symbols/at.png", "symbols/lambda.png",
+                    "symbols/lightning.png", "symbols/tripod.png", "symbols/hy.png", "symbols/cdotleft.png")),
+            new ArrayList<>(List.of("symbols/eumlat.png", "symbols/mirror.png", "symbols/cdotleft.png",
+                    "symbols/loop.png", "symbols/whitestar.png", "symbols/hy.png", "symbols/question.png")),
+            new ArrayList<>(List.of("symbols/copyright.png", "symbols/pumpkin.png", "symbols/loop.png",
+                    "symbols/xi.png", "symbols/three.png", "symbols/lambda.png", "symbols/whitestar.png")),
+            new ArrayList<>(List.of("symbols/six.png", "symbols/paragraph.png", "symbols/bt.png", "symbols/tripod.png",
+                    "symbols/xi.png", "symbols/question.png", "symbols/smiley.png")),
+            new ArrayList<>(List.of("symbols/trident.png", "symbols/smiley.png", "symbols/bt.png",
+                    "symbols/cdotright.png", "symbols/paragraph.png", "symbols/worm.png", "symbols/blackstar.png")),
+            new ArrayList<>(List.of("symbols/six.png", "symbols/eumlat.png", "symbols/puzzle.png",
+                    "symbols/ae.png", "symbols/trident.png", "symbols/nhat.png", "symbols/omega.png"))
     );
     private Set<String> selected;
     private static KeypadSolver instance;

@@ -22,55 +22,55 @@ public class KeypadSolverTest {
         assertEquals(4, keSolver.getNumKeys());
         assertEquals(0, keSolver.getSelected().size());
         assertEquals(Set.of(
-                "src/main/symbols/ae.png", "src/main/symbols/at.png", "src/main/symbols/blackstar.png",
-                "src/main/symbols/bt.png", "src/main/symbols/cdotleft.png", "src/main/symbols/cdotright.png",
-                "src/main/symbols/copyright.png", "src/main/symbols/eumlat.png", "src/main/symbols/hy.png",
-                "src/main/symbols/lambda.png", "src/main/symbols/lightning.png", "src/main/symbols/loop.png",
-                "src/main/symbols/mirror.png", "src/main/symbols/nhat.png", "src/main/symbols/omega.png",
-                "src/main/symbols/paragraph.png", "src/main/symbols/pumpkin.png", "src/main/symbols/puzzle.png",
-                "src/main/symbols/question.png", "src/main/symbols/six.png", "src/main/symbols/smiley.png",
-                "src/main/symbols/three.png", "src/main/symbols/trident.png", "src/main/symbols/tripod.png",
-                "src/main/symbols/whitestar.png", "src/main/symbols/worm.png", "src/main/symbols/xi.png"
+                "symbols/ae.png", "symbols/at.png", "symbols/blackstar.png",
+                "symbols/bt.png", "symbols/cdotleft.png", "symbols/cdotright.png",
+                "symbols/copyright.png", "symbols/eumlat.png", "symbols/hy.png",
+                "symbols/lambda.png", "symbols/lightning.png", "symbols/loop.png",
+                "symbols/mirror.png", "symbols/nhat.png", "symbols/omega.png",
+                "symbols/paragraph.png", "symbols/pumpkin.png", "symbols/puzzle.png",
+                "symbols/question.png", "symbols/six.png", "symbols/smiley.png",
+                "symbols/three.png", "symbols/trident.png", "symbols/tripod.png",
+                "symbols/whitestar.png", "symbols/worm.png", "symbols/xi.png"
         ), keSolver.getImageFiles());
     }
 
     @Test
     public void testSolveError() {
-        keSolver.getSelected().addAll(List.of("src/main/symbols/ae.png", "src/main/symbols/at.png",
-                "src/main/symbols/blackstar.png", "src/main/symbols/bt.png"));
+        keSolver.getSelected().addAll(List.of("symbols/ae.png", "symbols/at.png",
+                "symbols/blackstar.png", "symbols/bt.png"));
         assertEquals(0, keSolver.solve().size());
     }
 
     @Test
     public void testSolve() {
-        keSolver.getSelected().addAll(List.of("src/main/symbols/mirror.png", "src/main/symbols/cdotleft.png",
-                "src/main/symbols/tripod.png", "src/main/symbols/lambda.png"));
-        assertEquals(List.of("src/main/symbols/mirror.png", "src/main/symbols/lambda.png",
-                "src/main/symbols/tripod.png", "src/main/symbols/cdotleft.png"), keSolver.solve());
+        keSolver.getSelected().addAll(List.of("symbols/mirror.png", "symbols/cdotleft.png",
+                "symbols/tripod.png", "symbols/lambda.png"));
+        assertEquals(List.of("symbols/mirror.png", "symbols/lambda.png",
+                "symbols/tripod.png", "symbols/cdotleft.png"), keSolver.solve());
         keSolver.getSelected().clear();
-        keSolver.getSelected().addAll(List.of("src/main/symbols/whitestar.png", "src/main/symbols/loop.png",
-                "src/main/symbols/hy.png", "src/main/symbols/eumlat.png"));
-        assertEquals(List.of("src/main/symbols/eumlat.png", "src/main/symbols/loop.png",
-                "src/main/symbols/whitestar.png", "src/main/symbols/hy.png"), keSolver.solve());
+        keSolver.getSelected().addAll(List.of("symbols/whitestar.png", "symbols/loop.png",
+                "symbols/hy.png", "symbols/eumlat.png"));
+        assertEquals(List.of("symbols/eumlat.png", "symbols/loop.png",
+                "symbols/whitestar.png", "symbols/hy.png"), keSolver.solve());
         keSolver.getSelected().clear();
-        keSolver.getSelected().addAll(List.of("src/main/symbols/xi.png", "src/main/symbols/three.png",
-                "src/main/symbols/pumpkin.png", "src/main/symbols/copyright.png"));
-        assertEquals(List.of("src/main/symbols/copyright.png", "src/main/symbols/pumpkin.png",
-                "src/main/symbols/xi.png", "src/main/symbols/three.png"), keSolver.solve());
+        keSolver.getSelected().addAll(List.of("symbols/xi.png", "symbols/three.png",
+                "symbols/pumpkin.png", "symbols/copyright.png"));
+        assertEquals(List.of("symbols/copyright.png", "symbols/pumpkin.png",
+                "symbols/xi.png", "symbols/three.png"), keSolver.solve());
         keSolver.getSelected().clear();
-        keSolver.getSelected().addAll(List.of("src/main/symbols/smiley.png", "src/main/symbols/bt.png",
-                "src/main/symbols/six.png", "src/main/symbols/paragraph.png"));
-        assertEquals(List.of("src/main/symbols/six.png", "src/main/symbols/paragraph.png",
-                "src/main/symbols/bt.png", "src/main/symbols/smiley.png"), keSolver.solve());
+        keSolver.getSelected().addAll(List.of("symbols/smiley.png", "symbols/bt.png",
+                "symbols/six.png", "symbols/paragraph.png"));
+        assertEquals(List.of("symbols/six.png", "symbols/paragraph.png",
+                "symbols/bt.png", "symbols/smiley.png"), keSolver.solve());
         keSolver.getSelected().clear();
-        keSolver.getSelected().addAll(List.of("src/main/symbols/cdotright.png", "src/main/symbols/worm.png",
-                "src/main/symbols/trident.png", "src/main/symbols/blackstar.png"));
-        assertEquals(List.of("src/main/symbols/trident.png", "src/main/symbols/cdotright.png",
-                "src/main/symbols/worm.png", "src/main/symbols/blackstar.png"), keSolver.solve());
+        keSolver.getSelected().addAll(List.of("symbols/cdotright.png", "symbols/worm.png",
+                "symbols/trident.png", "symbols/blackstar.png"));
+        assertEquals(List.of("symbols/trident.png", "symbols/cdotright.png",
+                "symbols/worm.png", "symbols/blackstar.png"), keSolver.solve());
         keSolver.getSelected().clear();
-        keSolver.getSelected().addAll(List.of("src/main/symbols/ae.png", "src/main/symbols/omega.png",
-                "src/main/symbols/nhat.png", "src/main/symbols/puzzle.png"));
-        assertEquals(List.of("src/main/symbols/puzzle.png", "src/main/symbols/ae.png",
-                "src/main/symbols/nhat.png", "src/main/symbols/omega.png"), keSolver.solve());
+        keSolver.getSelected().addAll(List.of("symbols/ae.png", "symbols/omega.png",
+                "symbols/nhat.png", "symbols/puzzle.png"));
+        assertEquals(List.of("symbols/puzzle.png", "symbols/ae.png",
+                "symbols/nhat.png", "symbols/omega.png"), keSolver.solve());
     }
 }

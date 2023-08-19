@@ -104,9 +104,9 @@ public class KeypadGui implements ActionListener {
         for (String file : files) {
             JPanel panel = panels.get(index);
             JButton button = new JButton();
-            ImageIcon image = new ImageIcon(file);
-            Image symbol = image.getImage().getScaledInstance(PANEL_SIZE - 2 * BUFFER
-                    , PANEL_SIZE - 2 * BUFFER, java.awt.Image.SCALE_SMOOTH);
+            ImageIcon image = new ImageIcon(ClassLoader.getSystemResource(file));
+            Image symbol = image.getImage().getScaledInstance(PANEL_SIZE - 2 * BUFFER,
+                    PANEL_SIZE - 2 * BUFFER, java.awt.Image.SCALE_SMOOTH);
             ImageIcon icon = new ImageIcon(symbol, file);
             button.setIcon(icon);
             button.setBounds(BUFFER, BUFFER,
@@ -168,7 +168,7 @@ public class KeypadGui implements ActionListener {
         labels.get(1).setVisible(true);
         int x = 3;
         for (String file : solution) {
-            ImageIcon image = new ImageIcon(file);
+            ImageIcon image = new ImageIcon(ClassLoader.getSystemResource(file));
             Image symbol = image.getImage().getScaledInstance(PANEL_SIZE, PANEL_SIZE, java.awt.Image.SCALE_SMOOTH);
             ImageIcon icon = new ImageIcon(symbol, file);
             labels.get(x).setIcon(icon);
