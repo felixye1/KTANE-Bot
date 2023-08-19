@@ -50,6 +50,7 @@ public class KeepTalkingAndNoOneExplodesSolverApp {
             displayOptions();
             command = scanner.nextLine();
             if (command.equalsIgnoreCase(FINISH_KEY)) {
+                scanner.close();
                 break;
             } else {
                 processInput(command);
@@ -210,6 +211,7 @@ public class KeepTalkingAndNoOneExplodesSolverApp {
     // MODIFIES: this
     // EFFECTS: processes user input
     private void processInput(String command) {
+        command = command.trim();
         if (command.equalsIgnoreCase("sw")) {
             doSimpleWires();
         } else if (command.equalsIgnoreCase("bu")) {
