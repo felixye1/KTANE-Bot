@@ -1,4 +1,4 @@
-# Keep Talking And No One Explodes Solver: Guide
+# Keep Talking And No One Explodes Bot: Guide
 
 Built entirely with Java, this program acts as the 
 manual of the game Keep Talking And No One
