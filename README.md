@@ -286,7 +286,7 @@ The input is: **15 32 43 11**
 
 ### Password
 
-This can be accessed by entering **mc** when prompted to select a module.
+This can be accessed by entering **pa** when prompted to select a module.
 
 Enter the six available letters for each column one by one as prompted, 
 separated by spaces. (the order does not matter).
